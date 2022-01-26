@@ -6,6 +6,7 @@
 #macro MSG_LOGIN_FAILED 3
 #macro MSG_UPDATE 4
 
+
 if is_string(async_load[? "result"]) begin  //////////////////////////////////////////////////////////////////////
 
 var data = json_parse(async_load[? "result"]);
@@ -16,9 +17,8 @@ if variable_struct_exists(data, "msg") {
 			show_debug_message("MSG_LOGIN, " + string(data.user_id));
 			user_id = real(data.user_id);
 			window_set_caption("user_id = " + string(user_id));
-			Obj_Player.x = real(data.user_x);
-			Obj_Player.y = real(data.user_y);
-			Spawn_Wall_Layout(data.server_grid);
+			//Obj_Player.x = real(data.user_x);
+			//Obj_Player.y = real(data.user_y);
 			alarm[AlarmUpdate] = 1;
 	        break;
 			
@@ -46,7 +46,7 @@ if variable_struct_exists(data, "msg") {
 			
 		case MSG_UPDATE:
 			//show_debug_message("MSG_UPDATE");
-			Update(data.clients);
+			//Update(data.clients);
 			alarm[AlarmUpdate] = 1;
 	        break;
 			
