@@ -1,0 +1,31 @@
+{
+  "name": "onlyonegamemaker",
+  "version": "1.0.0",
+  "description": "Currently WIP... Will update more if this get's into alpha!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KurtBliss/OnlyOneGameMaker.git"
+  },
+  "keywords": [
+    "GameMaker",
+    "GameDev",
+    "MultiPlaer",
+    "Online",
+    "Game",
+    "TopDown"
+  ],
+  "author": "DevZze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KurtBliss/OnlyOneGameMaker/issues"
+  },
+  "homepage": "https://github.com/KurtBliss/OnlyOneGameMaker#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fast-astar": "^1.0.6"
+  }
+}
